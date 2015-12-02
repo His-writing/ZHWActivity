@@ -32,11 +32,7 @@ static ZHWActivity *activity=nil;
     }
     return _bgView;
 }
-
-
-
-
--(void)startActivity:(UIView *)view  AnimatingValue:(CGFloat)value   bufferWidth:(CGFloat )width  bufferHeight:(CGFloat)height{
+-(void)startActivity:(UIView *)view  AnimatingValue:(CGFloat)value   bufferWidth:(CGFloat )width  bufferHeight:(CGFloat)height   activityConstraint:(BOOL)constraint{
 
     _animatingValue=value;
     
@@ -50,7 +46,12 @@ static ZHWActivity *activity=nil;
 //    UIView *view1=[[UIView alloc]init];
     
     [ZHWActivity getActivity].inView.frame=view.frame;
-    [view addSubview:[ZHWActivity getActivity].inView];
+    
+    if (constraint) {
+        [view addSubview:[ZHWActivity getActivity].inView];
+
+    }
+    
     [view addSubview:activity];
     [ZHWActivity getActivity].inView.hidden=NO;
 

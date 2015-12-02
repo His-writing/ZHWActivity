@@ -57,8 +57,7 @@
     
     
     if (![[ZHWActivity getActivity]isAnimating]) {
-        
-        [[ZHWActivity getActivity]startActivity:self.view AnimatingValue:2 bufferWidth:50 bufferHeight:50];
+        [[ZHWActivity getActivity]startActivity:self.view AnimatingValue:2 bufferWidth:50 bufferHeight:50 activityConstraint:NO];
     }
     
     [self performSelector:@selector(stopActivityclick:) withObject:nil afterDelay:5.0f];
