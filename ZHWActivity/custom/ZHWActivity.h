@@ -33,7 +33,7 @@
  value          状态的速度，2为正常速度
  width          状态的width
  height          状态的height
- constraint     是否屏蔽屏幕点击
+ constraint     是否屏蔽屏幕点击 yes 被屏蔽 no不屏蔽
  
  */
 -(void)startActivity:(UIView *)view  AnimatingValue:(CGFloat)value   bufferWidth:(CGFloat )width  bufferHeight:(CGFloat)height   activityConstraint:(BOOL)constraint;

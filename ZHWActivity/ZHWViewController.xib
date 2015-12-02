@@ -26,13 +26,23 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-d3-R70">
-                    <rect key="frame" x="100" y="302" width="46" height="30"/>
+                    <rect key="frame" x="89" y="298" width="46" height="30"/>
                     <animations/>
                     <state key="normal" title="取消">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="stopActivityclick:" destination="-1" eventType="touchUpInside" id="46j-UO-qrG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAX-hy-phi">
+                    <rect key="frame" x="83" y="109" width="46" height="30"/>
+                    <animations/>
+                    <state key="normal" title="开始2">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startClick1:" destination="-1" eventType="touchUpInside" id="5Md-sK-h8a"/>
                     </connections>
                 </button>
             </subviews>

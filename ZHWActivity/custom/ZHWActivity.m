@@ -48,12 +48,13 @@ static ZHWActivity *activity=nil;
     [ZHWActivity getActivity].inView.frame=view.frame;
     
     if (constraint) {
-        [view addSubview:[ZHWActivity getActivity].inView];
+        
+     [view addSubview:[ZHWActivity getActivity].inView];
+        [ZHWActivity getActivity].inView.hidden=NO;
 
     }
     
     [view addSubview:activity];
-    [ZHWActivity getActivity].inView.hidden=NO;
 
     [activity startAnimating];
 
@@ -122,10 +123,9 @@ static ZHWActivity *activity=nil;
 - (void)stopAnimating
 {
     self.hidden=YES;
-    animating = NO;
-    
-    
     [ZHWActivity getActivity].inView.hidden=YES;
+
+    animating = NO;
     
     
 }

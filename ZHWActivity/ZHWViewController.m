@@ -52,6 +52,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)startClick1:(id)sender{
+    
+    
+    if (![[ZHWActivity getActivity]isAnimating]) {
+        [[ZHWActivity getActivity]startActivity:self.view AnimatingValue:2 bufferWidth:50 bufferHeight:50 activityConstraint:YES];
+    }
+    NSLog(@"no");
+    
+}
 
 - (IBAction)startClick:(id)sender {
     
@@ -60,15 +69,20 @@
         [[ZHWActivity getActivity]startActivity:self.view AnimatingValue:2 bufferWidth:50 bufferHeight:50 activityConstraint:NO];
     }
     
-    [self performSelector:@selector(stopActivityclick:) withObject:nil afterDelay:5.0f];
+//    [self performSelector:@selector(stopActivityclick:) withObject:nil afterDelay:5.0f];
     
 
     
+    NSLog(@"yes");
 }
+
+
 
 - (IBAction)stopActivityclick:(id)sender {
     
     [[ZHWActivity getActivity]stopAnimating];
+    NSLog(@"stop");
+
     
 }
 @end

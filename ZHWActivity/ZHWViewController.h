@@ -13,5 +13,6 @@
 - (IBAction)startClick:(id)sender;
 
 - (IBAction)stopActivityclick:(id)sender ;
+- (IBAction)startClick1:(id)sender;
 
 @end
